@@ -21,7 +21,7 @@ job('Seed-Job') {
 
     steps {
         dsl {
-            external "*.groovy"
+            external "step-combination.groovy"
             removeAction('DELETE')
             removeViewAction('DELETE')
             ignoreExisting(false)
