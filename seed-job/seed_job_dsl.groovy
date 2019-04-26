@@ -1,4 +1,4 @@
-job('Seed-Job') {
+job('ndcc-seed-job') {
     description('Seed-Job')
     environmentVariables {
         keepBuildVariables(true)
