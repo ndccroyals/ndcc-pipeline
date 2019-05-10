@@ -1,4 +1,4 @@
-job('ndcc-seed-job') {
+job('Seed-Job') {
     description('Seed-Job')
     environmentVariables {
         keepBuildVariables(true)
@@ -21,7 +21,7 @@ job('ndcc-seed-job') {
 
     steps {
         dsl {
-            external "step-combination.groovy"
+            external "*.groovy"
             removeAction('DELETE')
             removeViewAction('DELETE')
             ignoreExisting(false)
