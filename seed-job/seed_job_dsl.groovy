@@ -1,4 +1,4 @@
-job('Seed-Job') {
+pipeline('Seed-Job') {
     description('Seed-Job')
     environmentVariables {
         keepBuildVariables(true)
