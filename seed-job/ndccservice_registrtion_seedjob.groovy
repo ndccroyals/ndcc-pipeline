@@ -20,11 +20,9 @@ job('ndccservice_registration_seed_job') {
     concurrentBuild(false)
 
     steps {
-        dsl {
-            external "ndccregistration_service.groovy"
-            removeAction('DELETE')
-            removeViewAction('DELETE')
-            ignoreExisting(false)
-         }
+               maven {
+            mavenInstallation("M3")
+            goals('-e clean test')
+        }
     }
 }
