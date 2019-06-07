@@ -10,7 +10,7 @@ job('ndccservice_registration_seed_job') {
                 url("https://github.com/ndccroyals/ndcc-service-registration.git")
                 credentials("ndccroyals:Royals211016")
             }
-            branch('dev')
+            branch('master')
         }
     }
     triggers {
