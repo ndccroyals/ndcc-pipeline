@@ -1,4 +1,4 @@
-job('ndccservice_registration_seed_job') {
+pipeline('ndccservice_registration_seed_job') {
     description('Seed-Job')
     environmentVariables {
         keepBuildVariables(true)
