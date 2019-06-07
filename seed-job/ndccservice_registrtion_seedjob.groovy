@@ -1,4 +1,4 @@
-job('ndccservice_registration_seed_job') {
+pipelineJob('ndccservice_registration_seed_job') {
     description('Seed-Job')
     environmentVariables {
         keepBuildVariables(true)
@@ -20,7 +20,7 @@ job('ndccservice_registration_seed_job') {
     concurrentBuild(false)
 
     steps {
-        pipelineJob {
+        dsl {
             external "ndccregistration_service.groovy"
             removeAction('DELETE')
             removeViewAction('DELETE')
