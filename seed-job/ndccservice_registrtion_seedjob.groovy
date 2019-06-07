@@ -20,7 +20,7 @@ job('ndccservice_registration_seed_job') {
     concurrentBuild(false)
 
     steps {
-        dsl {
+        pipeline {
             external "ndccregistration_service.groovy"
             removeAction('DELETE')
             removeViewAction('DELETE')
