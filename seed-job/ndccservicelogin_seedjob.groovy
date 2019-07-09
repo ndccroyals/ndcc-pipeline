@@ -21,7 +21,7 @@ job('ndccservice-login-seed-job') {
 
     steps {
         dsl {
-            external "ndccregistration-service.groovy"
+            external "ndccregistration_service.groovy"
             removeAction('DELETE')
             removeViewAction('DELETE')
             ignoreExisting(false)
